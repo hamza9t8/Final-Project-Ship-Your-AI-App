@@ -1,22 +1,16 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #000000;
+  --color-card: #121212;
+  --color-accent-green: #10B981;
+  --color-accent-red: #EF4444;
+}
+
+/* Force dark mode for AMOLED */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #000000;
+  --foreground: #ededed;
 }
 
 body {
